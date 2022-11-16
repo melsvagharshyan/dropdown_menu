@@ -1,0 +1,14 @@
+.Musics {
+    max-width: 100%;
+    background-color: deeppink;
+    .carousel{
+        max-width: 800px;
+        background: lime;
+        margin: 0 auto;
+        .item{
+            max-width: 100%;
+            height: 400px;
+            background: yellow;
+        }
+    }
+}
