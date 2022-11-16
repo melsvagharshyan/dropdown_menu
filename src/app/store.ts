@@ -1,5 +1,4 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import posts from './Reducers/postsReducer'
 import menuState from './Reducers/menuReducer';
 
 
@@ -7,7 +6,6 @@ import menuState from './Reducers/menuReducer';
 
 export const store = configureStore({
   reducer: {
-     posts,
       menuState
   },
 });

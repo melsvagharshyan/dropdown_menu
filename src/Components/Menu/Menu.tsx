@@ -3,7 +3,7 @@ import React from 'react';
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import {setOpen} from "../../app/Reducers/menuReducer";
 import {IoIosArrowDown} from 'react-icons/io';
-import {IoIosArrowUp} from 'react-icons/io'
+import {IoIosArrowForward} from 'react-icons/io'
 import {SlArrowRight} from 'react-icons/sl';
 
 
@@ -20,8 +20,8 @@ const Menu: React.FC = () => {
                         <div className={styles.parentMenu} key={p.id}>
                             <div className={styles.parentContext}>
                                 {p.isOpen ?
-                                    <IoIosArrowUp className={styles.icon} onClick={() => dispatch(setOpen(p.id))}/> :
-                                    <IoIosArrowDown className={styles.icon} onClick={() => dispatch(setOpen(p.id))}/>}
+                                    <IoIosArrowDown className={styles.icon} onClick={() => dispatch(setOpen(p.id))}/> :
+                                    <IoIosArrowForward className={styles.icon} onClick={() => dispatch(setOpen(p.id))}/>}
                                 <p>{p.name}</p>
                             </div>
                             {
